@@ -16,39 +16,39 @@
 
 <style>
 /* ====================================================================
-   TECHNICAL THEME & CYBER COLOR PALETTES
+   TECHNICAL THEME & ACCESSIBLE, USER-FRIENDLY COLOR PALETTES
    ==================================================================== */
 :root {
-  --theme-name: "Cyber Neon";
-  --bg-base: #060913;
-  --bg-grid: rgba(0, 240, 255, 0.04);
-  --bg-card: rgba(13, 20, 36, 0.86);
-  --bg-card-hover: rgba(18, 28, 50, 0.92);
-  --bg-surface: rgba(19, 29, 53, 0.7);
-  --bg-input: rgba(9, 15, 29, 0.88);
-  --border-color: rgba(56, 189, 248, 0.22);
-  --border-glow: rgba(0, 240, 255, 0.45);
+  --theme-name: "Electric Slate";
+  --bg-base: #0b0f19;
+  --bg-grid: rgba(59, 130, 246, 0.05);
+  --bg-card: rgba(17, 24, 39, 0.9);
+  --bg-card-hover: rgba(24, 34, 53, 0.95);
+  --bg-surface: rgba(30, 41, 59, 0.7);
+  --bg-input: rgba(15, 23, 42, 0.88);
+  --border-color: rgba(148, 163, 184, 0.18);
+  --border-glow: rgba(59, 130, 246, 0.35);
   
-  --cyber-cyan: #00f0ff;
-  --cyber-cyan-rgb: 0, 240, 255;
-  --cyber-cyan-glow: rgba(0, 240, 255, 0.35);
+  --cyber-cyan: #06b6d4;
+  --cyber-cyan-rgb: 6, 182, 212;
+  --cyber-cyan-glow: rgba(6, 182, 212, 0.25);
   
-  --cyber-accent: #a855f7;
-  --cyber-accent-rgb: 168, 85, 247;
-  --cyber-accent-glow: rgba(168, 85, 247, 0.35);
+  --cyber-accent: #6366f1;
+  --cyber-accent-rgb: 99, 102, 241;
+  --cyber-accent-glow: rgba(99, 102, 241, 0.25);
   
   --cyber-emerald: #10b981;
   --cyber-emerald-rgb: 16, 185, 129;
-  --cyber-emerald-glow: rgba(16, 185, 129, 0.35);
+  --cyber-emerald-glow: rgba(16, 185, 129, 0.25);
   
   --cyber-amber: #f59e0b;
-  --cyber-amber-glow: rgba(245, 158, 11, 0.35);
+  --cyber-amber-glow: rgba(245, 158, 11, 0.25);
   
-  --cyber-crimson: #f43f5e;
-  --cyber-crimson-glow: rgba(244, 63, 94, 0.35);
+  --cyber-crimson: #ef4444;
+  --cyber-crimson-glow: rgba(239, 68, 68, 0.25);
   
-  --primary: #0284c7;
-  --primary-hover: #0369a1;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
   --accent: #6366f1;
   
   --text-main: #e2e8f0;
@@ -60,71 +60,238 @@
   --radius-md: 8px;
   --radius-sm: 6px;
   
-  --shadow-tech: 0 8px 32px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 25px rgba(0, 240, 255, 0.2);
+  --shadow-tech: 0 8px 30px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 20px rgba(6, 182, 212, 0.16);
 }
 
-/* Palette Preset: Matrix Terminal (Emerald) */
-[data-theme="matrix"] {
-  --theme-name: "Matrix Terminal";
-  --bg-base: #030b06;
-  --bg-grid: rgba(0, 255, 128, 0.05);
-  --bg-card: rgba(6, 25, 15, 0.88);
-  --bg-card-hover: rgba(10, 36, 22, 0.94);
-  --bg-surface: rgba(8, 30, 18, 0.75);
-  --bg-input: rgba(4, 18, 10, 0.9);
-  --border-color: rgba(16, 185, 129, 0.28);
-  --border-glow: rgba(0, 255, 128, 0.5);
-  --cyber-cyan: #00ff88;
-  --cyber-cyan-rgb: 0, 255, 136;
-  --cyber-cyan-glow: rgba(0, 255, 136, 0.35);
-  --cyber-accent: #10b981;
-  --cyber-accent-glow: rgba(16, 185, 129, 0.35);
+/* Palette Preset: Ocean Teal (Cool & Calming Tech) */
+[data-theme="ocean"] {
+  --theme-name: "Ocean Teal";
+  --bg-base: #071322;
+  --bg-grid: rgba(14, 165, 233, 0.05);
+  --bg-card: rgba(11, 28, 48, 0.9);
+  --bg-card-hover: rgba(16, 38, 64, 0.95);
+  --bg-surface: rgba(15, 36, 62, 0.7);
+  --bg-input: rgba(9, 23, 40, 0.9);
+  --border-color: rgba(56, 189, 248, 0.22);
+  --border-glow: rgba(14, 165, 233, 0.35);
+  --cyber-cyan: #0ea5e9;
+  --cyber-cyan-rgb: 14, 165, 233;
+  --cyber-cyan-glow: rgba(14, 165, 233, 0.25);
+  --cyber-accent: #14b8a6;
+  --cyber-accent-rgb: 20, 184, 166;
+  --cyber-accent-glow: rgba(20, 184, 166, 0.25);
+  --primary: #0284c7;
+  --primary-hover: #0369a1;
+  --shadow-glow: 0 0 20px rgba(14, 165, 233, 0.18);
+}
+
+/* Palette Preset: Emerald Mint (Soothing Ergonomic Tech) */
+[data-theme="emerald"] {
+  --theme-name: "Emerald Mint";
+  --bg-base: #081410;
+  --bg-grid: rgba(16, 185, 129, 0.05);
+  --bg-card: rgba(12, 32, 25, 0.9);
+  --bg-card-hover: rgba(17, 44, 34, 0.95);
+  --bg-surface: rgba(16, 40, 31, 0.7);
+  --bg-input: rgba(8, 24, 19, 0.9);
+  --border-color: rgba(52, 211, 153, 0.22);
+  --border-glow: rgba(16, 185, 129, 0.35);
+  --cyber-cyan: #10b981;
+  --cyber-cyan-rgb: 16, 185, 129;
+  --cyber-cyan-glow: rgba(16, 185, 129, 0.25);
+  --cyber-accent: #06b6d4;
+  --cyber-accent-rgb: 6, 182, 212;
+  --cyber-accent-glow: rgba(6, 182, 212, 0.25);
   --primary: #059669;
   --primary-hover: #047857;
-  --shadow-glow: 0 0 25px rgba(0, 255, 136, 0.25);
+  --shadow-glow: 0 0 20px rgba(16, 185, 129, 0.18);
 }
 
-/* Palette Preset: Synthwave Sunset (Magenta & Solar Gold) */
-[data-theme="synthwave"] {
-  --theme-name: "Synthwave Sunset";
-  --bg-base: #0d0618;
-  --bg-grid: rgba(244, 63, 94, 0.05);
-  --bg-card: rgba(26, 12, 42, 0.88);
-  --bg-card-hover: rgba(38, 16, 62, 0.94);
-  --bg-surface: rgba(30, 14, 50, 0.75);
-  --bg-input: rgba(18, 8, 30, 0.9);
-  --border-color: rgba(236, 72, 153, 0.28);
-  --border-glow: rgba(244, 63, 94, 0.5);
-  --cyber-cyan: #f43f5e;
-  --cyber-cyan-rgb: 244, 63, 94;
-  --cyber-cyan-glow: rgba(244, 63, 94, 0.35);
-  --cyber-accent: #c084fc;
-  --cyber-accent-glow: rgba(192, 132, 252, 0.35);
-  --primary: #db2777;
-  --primary-hover: #be185d;
-  --shadow-glow: 0 0 25px rgba(244, 63, 94, 0.25);
+/* Palette Preset: Sunset Violet (Warm Twilight Tech) */
+[data-theme="sunset"] {
+  --theme-name: "Sunset Violet";
+  --bg-base: #110d1f;
+  --bg-grid: rgba(245, 158, 11, 0.05);
+  --bg-card: rgba(27, 20, 48, 0.9);
+  --bg-card-hover: rgba(38, 28, 66, 0.95);
+  --bg-surface: rgba(33, 24, 58, 0.7);
+  --bg-input: rgba(20, 15, 36, 0.9);
+  --border-color: rgba(168, 85, 247, 0.25);
+  --border-glow: rgba(245, 158, 11, 0.35);
+  --cyber-cyan: #f59e0b;
+  --cyber-cyan-rgb: 245, 158, 11;
+  --cyber-cyan-glow: rgba(245, 158, 11, 0.25);
+  --cyber-accent: #8b5cf6;
+  --cyber-accent-rgb: 139, 92, 246;
+  --cyber-accent-glow: rgba(139, 92, 246, 0.25);
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+  --shadow-glow: 0 0 20px rgba(245, 158, 11, 0.18);
 }
 
-/* Palette Preset: Quantum Blue (Hyper Cobalt & Luminous Ice) */
-[data-theme="quantum"] {
-  --theme-name: "Quantum Blue";
-  --bg-base: #040919;
-  --bg-grid: rgba(56, 189, 248, 0.05);
-  --bg-card: rgba(10, 22, 48, 0.88);
-  --bg-card-hover: rgba(14, 32, 70, 0.94);
-  --bg-surface: rgba(12, 27, 58, 0.75);
-  --bg-input: rgba(6, 16, 36, 0.9);
-  --border-color: rgba(56, 189, 248, 0.3);
-  --border-glow: rgba(56, 189, 248, 0.5);
-  --cyber-cyan: #38bdf8;
-  --cyber-cyan-rgb: 56, 189, 248;
-  --cyber-cyan-glow: rgba(56, 189, 248, 0.35);
-  --cyber-accent: #3b82f6;
-  --cyber-accent-glow: rgba(59, 130, 246, 0.35);
+/* Palette Preset: Clean Light Tech (Ergonomic Daytime Tech) */
+[data-theme="light"] {
+  --theme-name: "Clean Tech Light";
+  --bg-base: #f1f5f9;
+  --bg-grid: rgba(37, 99, 235, 0.04);
+  --bg-card: rgba(255, 255, 255, 0.96);
+  --bg-card-hover: #ffffff;
+  --bg-surface: #e2e8f0;
+  --bg-input: #ffffff;
+  --border-color: rgba(148, 163, 184, 0.35);
+  --border-glow: rgba(37, 99, 235, 0.25);
+  --cyber-cyan: #0284c7;
+  --cyber-cyan-rgb: 2, 132, 199;
+  --cyber-cyan-glow: rgba(2, 132, 199, 0.2);
+  --cyber-accent: #6366f1;
+  --cyber-accent-rgb: 99, 102, 241;
+  --cyber-accent-glow: rgba(99, 102, 241, 0.2);
+  --cyber-emerald: #059669;
+  --cyber-emerald-rgb: 5, 150, 105;
+  --cyber-emerald-glow: rgba(5, 150, 105, 0.2);
+  --cyber-amber: #d97706;
+  --cyber-amber-glow: rgba(217, 119, 6, 0.2);
+  --cyber-crimson: #dc2626;
+  --cyber-crimson-glow: rgba(220, 38, 38, 0.2);
   --primary: #2563eb;
   --primary-hover: #1d4ed8;
-  --shadow-glow: 0 0 25px rgba(56, 189, 248, 0.25);
+  --accent: #4f46e5;
+  --text-main: #334155;
+  --text-heading: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  --shadow-tech: 0 4px 20px rgba(15, 23, 42, 0.08);
+  --shadow-glow: 0 0 15px rgba(37, 99, 235, 0.12);
+}
+
+/* Light Theme Component Polish */
+[data-theme="light"] body {
+  background-color: #f1f5f9;
+  background-image: 
+    radial-gradient(ellipse at 15% 10%, rgba(2, 132, 199, 0.08) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 85%, rgba(99, 102, 241, 0.07) 0%, transparent 45%),
+    linear-gradient(rgba(37, 99, 235, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.04) 1px, transparent 1px);
+  color: #334155;
+}
+[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid rgba(203, 213, 225, 0.8);
+  box-shadow: 0 2px 14px rgba(15, 23, 42, 0.06);
+}
+[data-theme="light"] .logo {
+  background: linear-gradient(135deg, #0f172a 40%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="light"] .nav-links button {
+  color: #475569;
+}
+[data-theme="light"] .nav-links button:hover {
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.08);
+}
+[data-theme="light"] .nav-links button.active {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #ffffff;
+}
+[data-theme="light"] .nav-ctrl-btn {
+  background: #f8fafc !important;
+  color: #0284c7 !important;
+  border-color: #cbd5e1 !important;
+}
+[data-theme="light"] h2 {
+  background: linear-gradient(135deg, #0f172a 40%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="light"] h3, [data-theme="light"] h4 {
+  color: #0f172a;
+}
+[data-theme="light"] .card {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+}
+[data-theme="light"] .agenda-card,
+[data-theme="light"] .registered-card,
+[data-theme="light"] .scan-admit-card,
+[data-theme="light"] .stat-box {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+[data-theme="light"] .scan-admit-name {
+  color: #0f172a;
+}
+[data-theme="light"] .calendar-table-wrap {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+[data-theme="light"] .calendar-weekday-header {
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+[data-theme="light"] .calendar-day-cell {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+[data-theme="light"] .calendar-day-cell:hover {
+  background: #f1f5f9;
+}
+[data-theme="light"] .calendar-month-bar {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+[data-theme="light"] .calendar-month-title {
+  color: #0f172a;
+}
+[data-theme="light"] .calendar-date-number {
+  color: #475569;
+}
+[data-theme="light"] .filter-btn,
+[data-theme="light"] .view-toggle-group {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #475569;
+}
+[data-theme="light"] .filter-btn:hover {
+  color: #0284c7;
+}
+[data-theme="light"] .filter-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+[data-theme="light"] input,
+[data-theme="light"] select {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+[data-theme="light"] select option {
+  background: #ffffff;
+  color: #0f172a;
+}
+[data-theme="light"] label {
+  color: #334155;
+}
+[data-theme="light"] th {
+  background: #f1f5f9;
+  color: #0284c7;
+}
+[data-theme="light"] td {
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+}
+[data-theme="light"] tr:hover td {
+  background: #f8fafc;
+}
+[data-theme="light"] .modal-content {
+  background: #ffffff;
+  border-color: #0284c7;
+}
+[data-theme="light"] #techBackgroundCanvas {
+  opacity: 0.35;
 }
 
 /* ====================================================================
@@ -140,9 +307,9 @@
 body {
   background-color: var(--bg-base);
   background-image: 
-    radial-gradient(ellipse at 15% 10%, rgba(var(--cyber-cyan-rgb), 0.14) 0%, transparent 45%),
-    radial-gradient(ellipse at 85% 85%, rgba(var(--cyber-accent-rgb), 0.12) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 50%, rgba(var(--cyber-emerald-rgb), 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 15% 10%, rgba(var(--cyber-cyan-rgb), 0.12) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 85%, rgba(var(--cyber-accent-rgb), 0.10) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(var(--cyber-emerald-rgb), 0.05) 0%, transparent 50%),
     linear-gradient(var(--bg-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
@@ -173,7 +340,7 @@ body {
 }
 
 /* ====================================================================
-   ATTRACTIVE INTERACTIVE CYBER CURSOR
+   ATTRACTIVE INTERACTIVE CYBER CURSOR (ERGONOMIC & FLUID)
    ==================================================================== */
 .tech-cursor-dot {
   position: fixed;
@@ -183,74 +350,69 @@ body {
   height: 6px;
   border-radius: 50%;
   background: var(--cyber-cyan);
-  box-shadow: 0 0 10px var(--cyber-cyan), 0 0 20px var(--cyber-cyan);
+  box-shadow: 0 0 8px var(--cyber-cyan-glow);
   pointer-events: none;
   z-index: 99999;
   transform: translate(-50%, -50%);
-  transition: transform 0.04s ease-out, background-color 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.08s ease-out, background-color 0.2s ease, opacity 0.2s ease;
 }
 
 .tech-cursor-ring {
   position: fixed;
   top: 0;
   left: 0;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1.5px solid var(--cyber-cyan);
   pointer-events: none;
   z-index: 99998;
   transform: translate(-50%, -50%);
-  transition: width 0.22s cubic-bezier(0.18, 0.89, 0.32, 1.28),
-              height 0.22s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+  transition: width 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+              height 0.18s cubic-bezier(0.16, 1, 0.3, 1),
               border-color 0.2s ease,
               background-color 0.2s ease,
               box-shadow 0.2s ease,
-              transform 0.12s ease-out,
+              transform 0.1s ease-out,
               opacity 0.2s ease;
-  box-shadow: 0 0 12px var(--cyber-cyan-glow);
+  box-shadow: 0 0 10px var(--cyber-cyan-glow);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Reticle crosshair tick marks */
-.tech-cursor-ring::before,
-.tech-cursor-ring::after {
+/* Subtle corner dot indicator for high-tech target reticle */
+.tech-cursor-ring::before {
   content: "";
   position: absolute;
-  background: var(--cyber-cyan);
-  opacity: 0.7;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--cyber-accent);
+  opacity: 0.8;
   transition: all 0.2s ease;
 }
-.tech-cursor-ring::before {
-  width: 8px;
-  height: 1px;
-}
-.tech-cursor-ring::after {
-  width: 1px;
-  height: 8px;
-}
 
-/* Cursor on interactive elements */
+/* Cursor on interactive elements - smooth responsive expansion */
 .tech-cursor-ring.cursor-hover {
-  width: 52px;
-  height: 52px;
+  width: 46px;
+  height: 46px;
   border-color: var(--cyber-cyan);
-  background: rgba(var(--cyber-cyan-rgb), 0.12);
-  box-shadow: 0 0 25px var(--cyber-cyan-glow), inset 0 0 12px var(--cyber-cyan-glow);
-  transform: translate(-50%, -50%) rotate(45deg);
+  background: rgba(var(--cyber-cyan-rgb), 0.08);
+  box-shadow: 0 0 18px var(--cyber-cyan-glow);
+  transform: translate(-50%, -50%);
 }
-.tech-cursor-ring.cursor-hover::before,
-.tech-cursor-ring.cursor-hover::after {
-  background: #ffffff;
+.tech-cursor-ring.cursor-hover::before {
+  width: 6px;
+  height: 6px;
+  background: var(--cyber-cyan);
   opacity: 1;
 }
 
 .tech-cursor-dot.cursor-hover {
-  transform: translate(-50%, -50%) scale(1.6);
+  transform: translate(-50%, -50%) scale(1.35);
   background: #ffffff;
-  box-shadow: 0 0 14px #ffffff, 0 0 25px var(--cyber-cyan);
+  box-shadow: 0 0 8px var(--cyber-cyan);
 }
 
 /* Click pulse explosion ring */
@@ -260,21 +422,21 @@ body {
   pointer-events: none;
   z-index: 99997;
   transform: translate(-50%, -50%);
-  animation: cursorPulseBlast 0.45s ease-out forwards;
+  animation: cursorPulseBlast 0.4s ease-out forwards;
 }
 @keyframes cursorPulseBlast {
   0% {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border: 2px solid var(--cyber-cyan);
-    box-shadow: 0 0 15px var(--cyber-cyan);
-    opacity: 1;
+    box-shadow: 0 0 10px var(--cyber-cyan-glow);
+    opacity: 0.9;
   }
   100% {
-    width: 75px;
-    height: 75px;
+    width: 62px;
+    height: 62px;
     border: 1px solid var(--cyber-accent);
-    box-shadow: 0 0 25px var(--cyber-accent);
+    box-shadow: 0 0 16px var(--cyber-accent-glow);
     opacity: 0;
   }
 }
@@ -1935,11 +2097,11 @@ footer {
   </div>
 
   <div style="display: flex; align-items: center; gap: 8px;">
-    <button class="nav-ctrl-btn" id="themePickerBtn" title="Cycle Color Palette: Cyber Neon, Matrix Terminal, Synthwave, Quantum Blue">
-      🎨 <span id="themePickerLabel">Cyber Neon</span>
+    <button class="nav-ctrl-btn" id="themePickerBtn" title="Cycle Color Palette: Electric Slate, Ocean Teal, Emerald Mint, Sunset Violet, Clean Light Tech">
+      🎨 <span id="themePickerLabel">Electric Slate</span>
     </button>
-    <button class="nav-ctrl-btn" id="cursorToggleBtn" title="Toggle Interactive Custom Cursor">
-      🎯 <span id="cursorToggleLabel">Cyber HUD</span>
+    <button class="nav-ctrl-btn" id="cursorToggleBtn" title="Toggle Cursor: Fluid Reticle, Minimal Dot, System Default">
+      🎯 <span id="cursorToggleLabel">Fluid Reticle</span>
     </button>
   </div>
 
@@ -1967,9 +2129,9 @@ footer {
 <section id="home" class="page active">
   <div class="hero">
     <div class="tech-telemetry-bar">
-      <span><span class="telemetry-beacon"></span> CORE: ONLINE</span>
-      <span>ENCRYPTION: ACTIVE</span>
-      <span>TECH FEST 2026</span>
+      <span><span class="telemetry-beacon"></span> Campus Live Hub</span>
+      <span>Digital Pass 2026</span>
+      <span>Instant Gate QR</span>
     </div>
     <h1>College Event & Gate Access Terminal</h1>
     <p>Comprehensive technical event management portal with cryptographic QR admittance pass, real-time camera scanner, and interactive event scheduling.</p>
@@ -2270,8 +2432,8 @@ footer {
       <div class="login-active-info">
         <div class="login-avatar" id="loginAvatarLetter">R</div>
         <div>
-          <div style="font-weight: 700; color: #34d399; font-size: 15px;" id="loginActiveName">Rohan Sharma</div>
-          <div style="font-size: 12.5px; color: #86efac;">
+          <div style="font-weight: 700; color: var(--text-heading); font-size: 15px;" id="loginActiveName">Rohan Sharma</div>
+          <div style="font-size: 12.5px; color: var(--text-muted);">
             Enrollment: <strong id="loginActiveEnrollment" class="tech-mono" style="color: var(--cyber-cyan);">210200107042</strong> · <span id="loginActiveCourse">Computer Engineering</span>
           </div>
         </div>
@@ -2297,7 +2459,7 @@ footer {
       </div>
 
       <!-- Quick sample login suggestions for testing convenience -->
-      <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: 8px; padding: 12px; margin-bottom: 16px;">
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 8px; padding: 12px; margin-bottom: 16px;">
         <div style="font-size: 12px; font-weight: 600; color: var(--cyber-cyan); margin-bottom: 6px;">⚡ Quick autofill sample profiles:</div>
         <div style="display: flex; gap: 6px; flex-wrap: wrap;">
           <button type="button" class="quick-fill-chip" onclick="quickFillLogin('Rohan Sharma', '210200107042')">
@@ -4291,35 +4453,6 @@ $("loginForm").addEventListener("reset", () => {
   }
 })();
 
-// Initialize app & event listeners
-initScannerDropdown();
-initThemeSwitcher();
-initTechBackgroundCanvas();
-initTechCursor();
-updateLoginUiState();
-renderHomeUpcomingSection();
-renderEventGrid();
-renderCalendar();
-renderRegisteredEvents();
-refreshStatus();
-renderRecentAttendance();
-renderLast5Scans();
-renderAdmin();
-
-// View switcher event listeners
-$("viewBtnGrid").addEventListener("click", () => switchView("grid"));
-$("viewBtnCalendar").addEventListener("click", () => switchView("calendar"));
-
-// Calendar navigation listeners
-$("calPrevMonthBtn").addEventListener("click", () => changeCalendarMonth(-1));
-$("calNextMonthBtn").addEventListener("click", () => changeCalendarMonth(1));
-$("calTodayBtn").addEventListener("click", () => {
-  currentCalendarYear = 2026;
-  currentCalendarMonth = 9; // October
-  selectedDateKey = null;
-  renderCalendar();
-});
-
 /* ====================================================================
    1. DYNAMIC TECHNICAL BACKGROUND CANVAS (CYBER CONSTELLATION MESH)
    ==================================================================== */
@@ -4421,7 +4554,7 @@ function initTechBackgroundCanvas() {
 /* ====================================================================
    2. INTERACTIVE CUSTOM TECHNICAL CURSOR & SPARK PARTICLES
    ==================================================================== */
-let cursorMode = localStorage.getItem("tech_cursor_mode") || "hud"; // "hud", "minimal", "off"
+let cursorMode = localStorage.getItem("tech_cursor_mode") || "reticle"; // "reticle", "minimal", "off"
 
 function initTechCursor() {
   const dot = $("techCursorDot");
@@ -4449,12 +4582,13 @@ function initTechCursor() {
 
   function applyCursorMode() {
     const label = $("cursorToggleLabel");
-    if (cursorMode === "hud") {
+    if (cursorMode === "reticle" || cursorMode === "hud") {
+      cursorMode = "reticle";
       dot.style.display = "block";
       ring.style.display = "flex";
       trailCanvas.style.display = "block";
       document.body.style.cursor = "none";
-      if (label) label.textContent = "Cyber HUD";
+      if (label) label.textContent = "Fluid Reticle";
     } else if (cursorMode === "minimal") {
       dot.style.display = "block";
       ring.style.display = "none";
@@ -4466,7 +4600,7 @@ function initTechCursor() {
       ring.style.display = "none";
       trailCanvas.style.display = "none";
       document.body.style.cursor = "auto";
-      if (label) label.textContent = "Default";
+      if (label) label.textContent = "Default Cursor";
     }
   }
 
@@ -4482,19 +4616,19 @@ function initTechCursor() {
       ring.style.opacity = "1";
     }
 
-    // Add trailing cyber sparks
-    if (cursorMode === "hud" && Math.random() > 0.35) {
+    // Add gentle, subtle trailing sparks
+    if (cursorMode === "reticle" && Math.random() > 0.5) {
       const computed = getComputedStyle(document.body);
-      const cyanRgb = computed.getPropertyValue("--cyber-cyan-rgb").trim() || "0, 240, 255";
-      const accentRgb = computed.getPropertyValue("--cyber-accent-rgb").trim() || "168, 85, 247";
+      const cyanRgb = computed.getPropertyValue("--cyber-cyan-rgb").trim() || "6, 182, 212";
+      const accentRgb = computed.getPropertyValue("--cyber-accent-rgb").trim() || "99, 102, 241";
       sparks.push({
-        x: mouseX + (Math.random() - 0.5) * 8,
-        y: mouseY + (Math.random() - 0.5) * 8,
-        vx: (Math.random() - 0.5) * 1.4,
-        vy: (Math.random() - 0.5) * 1.4,
-        life: 1,
+        x: mouseX + (Math.random() - 0.5) * 6,
+        y: mouseY + (Math.random() - 0.5) * 6,
+        vx: (Math.random() - 0.5) * 1.1,
+        vy: (Math.random() - 0.5) * 1.1,
+        life: 0.85,
         color: Math.random() > 0.4 ? cyanRgb : accentRgb,
-        radius: Math.random() * 2.2 + 1
+        radius: Math.random() * 1.8 + 0.9
       });
     }
 
@@ -4533,7 +4667,7 @@ function initTechCursor() {
     }
   });
 
-  // Shockwave click explosion effect
+  // Soft shockwave click pulse effect
   window.addEventListener("mousedown", e => {
     if (cursorMode === "off") return;
     const pulse = document.createElement("div");
@@ -4541,23 +4675,23 @@ function initTechCursor() {
     pulse.style.left = e.clientX + "px";
     pulse.style.top = e.clientY + "px";
     document.body.appendChild(pulse);
-    setTimeout(() => pulse.remove(), 450);
+    setTimeout(() => pulse.remove(), 400);
 
-    // Burst sparks
-    if (cursorMode === "hud") {
+    // Subtle burst sparks
+    if (cursorMode === "reticle") {
       const computed = getComputedStyle(document.body);
-      const cyanRgb = computed.getPropertyValue("--cyber-cyan-rgb").trim() || "0, 240, 255";
-      for (let i = 0; i < 10; i++) {
+      const cyanRgb = computed.getPropertyValue("--cyber-cyan-rgb").trim() || "6, 182, 212";
+      for (let i = 0; i < 6; i++) {
         const angle = Math.random() * Math.PI * 2;
-        const speed = Math.random() * 3 + 1.5;
+        const speed = Math.random() * 2 + 1;
         sparks.push({
           x: e.clientX,
           y: e.clientY,
           vx: Math.cos(angle) * speed,
           vy: Math.sin(angle) * speed,
-          life: 1,
+          life: 0.85,
           color: cyanRgb,
-          radius: Math.random() * 2.5 + 1.2
+          radius: Math.random() * 2 + 1
         });
       }
     }
@@ -4574,22 +4708,22 @@ function initTechCursor() {
       ring.style.top = ringY + "px";
 
       // Animate sparks
-      if (trailCtx && cursorMode === "hud") {
+      if (trailCtx && cursorMode === "reticle") {
         trailCtx.clearRect(0, 0, tWidth, tHeight);
         for (let i = sparks.length - 1; i >= 0; i--) {
           const s = sparks[i];
           s.x += s.vx;
           s.y += s.vy;
-          s.life -= 0.045;
+          s.life -= 0.04;
           if (s.life <= 0) {
             sparks.splice(i, 1);
             continue;
           }
           trailCtx.beginPath();
           trailCtx.arc(s.x, s.y, s.radius * s.life, 0, Math.PI * 2);
-          trailCtx.fillStyle = `rgba(${s.color}, ${s.life * 0.8})`;
+          trailCtx.fillStyle = `rgba(${s.color}, ${s.life * 0.75})`;
           trailCtx.shadowColor = `rgb(${s.color})`;
-          trailCtx.shadowBlur = 8;
+          trailCtx.shadowBlur = 6;
           trailCtx.fill();
           trailCtx.shadowBlur = 0;
         }
@@ -4605,9 +4739,9 @@ function initTechCursor() {
   const cursorToggleBtn = $("cursorToggleBtn");
   if (cursorToggleBtn) {
     cursorToggleBtn.addEventListener("click", () => {
-      if (cursorMode === "hud") cursorMode = "minimal";
+      if (cursorMode === "reticle") cursorMode = "minimal";
       else if (cursorMode === "minimal") cursorMode = "off";
-      else cursorMode = "hud";
+      else cursorMode = "reticle";
       localStorage.setItem("tech_cursor_mode", cursorMode);
       applyCursorMode();
     });
@@ -4615,17 +4749,18 @@ function initTechCursor() {
 }
 
 /* ====================================================================
-   3. MULTI-COLOR TECHNICAL THEME PRESET SWITCHER
+   3. MULTI-COLOR TECHNICAL THEME PRESET SWITCHER (USER-FRIENDLY)
    ==================================================================== */
 const THEMES = [
-  { id: "cyber-neon", name: "Cyber Neon", attr: "" },
-  { id: "matrix", name: "Matrix Terminal", attr: "matrix" },
-  { id: "synthwave", name: "Synthwave Sunset", attr: "synthwave" },
-  { id: "quantum", name: "Quantum Blue", attr: "quantum" }
+  { id: "electric-slate", name: "Electric Slate (Dark)", attr: "" },
+  { id: "ocean-teal", name: "Ocean Teal", attr: "ocean" },
+  { id: "emerald-mint", name: "Emerald Mint", attr: "emerald" },
+  { id: "sunset-violet", name: "Sunset Violet", attr: "sunset" },
+  { id: "light-tech", name: "Clean Tech (Light)", attr: "light" }
 ];
 
 function initThemeSwitcher() {
-  const savedThemeId = localStorage.getItem("tech_event_theme") || "cyber-neon";
+  const savedThemeId = localStorage.getItem("tech_event_theme") || "electric-slate";
   let currentIndex = THEMES.findIndex(t => t.id === savedThemeId);
   if (currentIndex === -1) currentIndex = 0;
 
@@ -4650,6 +4785,37 @@ function initThemeSwitcher() {
     });
   }
 }
+
+// ====================================================================
+// Application Startup & Global Listeners
+// ====================================================================
+initScannerDropdown();
+initThemeSwitcher();
+initTechBackgroundCanvas();
+initTechCursor();
+updateLoginUiState();
+renderHomeUpcomingSection();
+renderEventGrid();
+renderCalendar();
+renderRegisteredEvents();
+refreshStatus();
+renderRecentAttendance();
+renderLast5Scans();
+renderAdmin();
+
+// View switcher event listeners
+$("viewBtnGrid").addEventListener("click", () => switchView("grid"));
+$("viewBtnCalendar").addEventListener("click", () => switchView("calendar"));
+
+// Calendar navigation listeners
+$("calPrevMonthBtn").addEventListener("click", () => changeCalendarMonth(-1));
+$("calNextMonthBtn").addEventListener("click", () => changeCalendarMonth(1));
+$("calTodayBtn").addEventListener("click", () => {
+  currentCalendarYear = 2026;
+  currentCalendarMonth = 9; // October
+  selectedDateKey = null;
+  renderCalendar();
+});
 </script>
 
 </body>
