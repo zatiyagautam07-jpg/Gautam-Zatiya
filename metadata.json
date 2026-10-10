@@ -1,0 +1,6 @@
+{
+  "name": "College Event Registration System",
+  "description": "Comprehensive college event registration and attendance portal with QR code ticketing, camera check-in scanner, and interactive event catalog with relevant photos.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
